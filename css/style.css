@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    --almost-white:hsl(0, 0%, 98%);
+    --medium-gray:hsl(0, 0%, 41%);
+    --almost-black:hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+    padding:0;    
+    font-family: 'Epilogue', sans-serif;
+}
+
+h1 {
+    margin:0;
+    padding:0;    
+    font-size:2.5rem;
+}
+
+nav ul li a {
+    font-size:0.95rem!important;
+}
+
+.btn:hover {
+    color:#fff;
+}
+
+
+.navbar-brand {
+    font-size:2.1rem;
+}
+
+.navbar_toggler_button:focus,
+.navbar_toggler_button:hover,
+.offcanvas_close_btn:focus,
+.offcanvas_close_btn:hover {    
+    box-shadow:0px 0px #fff;
+}
+
+.learn_more_button {
+    border-radius:9px!important;
+    padding:10px 20px;
+}
+
+.dropdown-toggle::after {
+    transform:rotate(0deg);    
+    transition:all 0.5s;    
+}
+
+.dropdown-toggle:hover::after {    
+    transform:rotate(-180deg);
+}
+
+@media (min-width:900px) {
+    .header {
+        font-size:4rem;        
+    }
+
+    .dropdown-toggle::after {
+        transform:rotate(0deg);        
+    }
+
+    .dropdown-toggle:hover::after {    
+        transform:rotate(0deg);
+    }
+    
+    .dropdown-toggle:focus::after {    
+        transform:rotate(-180deg);
+    }
+    
+}

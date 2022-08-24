@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <script defer src="./js/bootstrap.bundle.min.js"></script>
+
+    <script defer src="./js/script.js"></script>
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="container-fluid navbar navbar-expand-lg navbar-light bg-white"
+      >
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand fw-bold ms-xl-3 ms-lg-3 ms-2">snap</a>
+
+          <button
+            class="navbar-toggler border-0 outline-0 navbar_toggler_button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#myNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="myNavbar" class="offcanvas offcanvas-end w-75">
+            <div class="container">
+              <div class="offcanvas-header">
+                <button
+                  class="btn-close border-0 outline-0 ms-auto fs-3 offcanvas_close_btn"
+                  data-bs-dismiss="offcanvas"
+                ></button>
+              </div>
+              <div
+                class="offcanvas-body justify-content-between align-items-center"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      >Features</a
+                    >
+                    <div class="dropdown-menu border-0">
+                      <a href="#" class="dropdown-item text-secondary">
+                        <img
+                          src="./images/icon-todo.svg"
+                          class="me-2"
+                          alt="to do list icon"
+                        />
+                        Todo List
+                      </a>
+                      <a href="#" class="dropdown-item text-secondary">
+                        <img src="./images/icon-calendar.svg" class="me-2" />
+                        Calendar
+                      </a>
+                      <a href="#" class="dropdown-item text-secondary">
+                        <img src="./images/icon-reminders.svg" class="me-2" />
+                        Reminders
+                      </a>
+                      <a href="#" class="dropdown-item text-secondary">
+                        <img src="./images/icon-planning.svg" class="me-2" />
+                        Planning
+                      </a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown mx-xl-3 mx-lg-3 mx-0">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle text-secondary"
+                      data-bs-toggle="dropdown"
+                      >Company</a
+                    >
+                    <div class="dropdown-menu border-0">
+                      <a href="#" class="dropdown-item text-secondary"
+                        >History</a
+                      >
+                      <a href="#" class="dropdown-item text-secondary"
+                        >Our Team</a
+                      >
+                      <a href="#" class="dropdown-item text-secondary">Blog</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-secondary"> Careers </a>
+                  </li>
+                  <li class="nav-item ms-xl-3 ms-lg-3 ms-0">
+                    <a href="#" class="nav-link text-secondary"> About </a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav">
+                  <li
+                    class="nav-item mx-xl-0 mx-lg-0 mx-auto mb-xl-0 mb-lg-0 mb-2"
+                  >
+                    <a href="#" class="nav-link"> Login </a>
+                  </li>
+                  <li class="nav-item ms-xl-3 ms-lg-3 ms-0">
+                    <a
+                      href="#"
+                      class="nav-link btn px-xl-3 px-md-3 btn-outline-dark"
+                    >
+                      Register
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="p-xl-5 p-lg-4">
+      <div class="mt-2 p-xl-5 p-lg-4">
+        <div class="row flex-row-reverse g-0">
+          <div class="col-xl-6 col-lg-6 col-12">
+            <img
+              class="img-fluid d-xl-none d-lg-none d-block mx-md-auto"
+              src="./images/image-hero-mobile.png"
+              alt="hero image mobile"
+            />
+            <img
+              class="img-fluid d-xl-block d-lg-block d-none w-75 mx-auto"
+              src="./images/image-hero-desktop.png"
+              alt="hero image desktop"
+            />
+          </div>
+          <div class="col-xl-6 col-lg-6 col-12 d-flex mt-xl-0 mt-lg-0 mt-4">
+            <div
+              class="d-flex flex-column justify-content-xl-between justify-content-lg-between justify-content-md-center mx-auto"
+            >
+              <div
+                class="container d-flex flex-column justify-content-center h-100 text-xl-start text-lg-start text-center pt-0"
+              >
+                <h1 class="fw-bold header mb-4">
+                  Make<br class="d-xl-block d-lg-block d-none" />
+                  remote work
+                </h1>
+                <p class="text-secondary fw-bold mb-4">
+                  Get your team in sync, no matter your location.<br
+                    class="d-xl-block d-lg-block d-none"
+                  />
+                  Streamline processes, create team rituals,<br
+                    class="d-xl-block d-lg-block d-none"
+                  />
+                  and watch productivity soar.
+                </p>
+                <div class="mt-xl-4 mt-lg-4 mb-4">
+                  <button
+                    class="btn btn-dark px-4 py-2"
+                    style="border-radius: 9px"
+                  >
+                    Learn more
+                  </button>
+                </div>
+              </div>
+              <div class="container mt-4 mb-xl-0 mb-lg-0 mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <img
+                      class="img-fluid"
+                      src="./images/client-audiophile.svg"
+                      alt="audiophile"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <img
+                      class="img-fluid"
+                      src="./images/client-databiz.svg"
+                      alt="databiz"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <img
+                      class="img-fluid"
+                      src="./images/client-maker.svg"
+                      alt="maker"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <img
+                      class="img-fluid"
+                      src="./images/client-meet.svg"
+                      alt="meet"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Aous Shaheen</a>.
+    </div>
+  </body>
+</html>
